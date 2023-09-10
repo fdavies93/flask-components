@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/static/css/output.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@preline/preline@1.0.0/dist/hs-ui.bundle.min.js"></script>
+  <script type="module" src="/static/scripts/main.js"></script>
+  <script>
+
+    function toggleDrawer(name) {
+      let element = document.getElementById(`drawer-${name}`);
+      if (element.classList.contains('show')) {
+        element.classList.remove('show');
+      } else {
+        element.classList.add('show');
+      }
+    }
+  </script>
+</head>
+
+{% block content %}
+{% endblock %}
+
+</html>
